@@ -23,23 +23,32 @@ col1, col2 = st.columns([1, 1])
 with col1:
     st.markdown("""
     <div style='padding: 20px;'>
-        <h3 style='margin-bottom: 20px;'>How It Works</h3>
-        <div style='margin-bottom: 20px;'>
-            <div style='display: flex; align-items: center;'>
-                <div style='font-size: 1.1em; background-color: #dbeafe; color: #1e40af; border-radius: 50%; width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; font-weight: bold;'>1</div>
-                <div style='margin-left: 10px;'><strong>Upload Your Dashboard Image</strong><br><span style='font-size: 0.9em;'>Take a clear photo showing warning lights</span></div>
+        <h3 style='margin-bottom: 30px; font-size: 1.7em;'>How It Works</h3>
+        <div style='margin-bottom: 30px;'>
+            <div style='display: flex; align-items: flex-start;'>
+                <div style='font-size: 1.1em; background-color: #dbeafe; color: #1e40af; border-radius: 50%; width: 36px; height: 36px; display: flex; justify-content: center; align-items: center; font-weight: bold;'>1</div>
+                <div style='margin-left: 15px;'>
+                    <div style='font-weight: 600; font-size: 1.2em;'>Upload Your Dashboard Image</div>
+                    <div style='font-size: 1.05em; color: #ccc;'>Take a clear photo showing warning lights</div>
+                </div>
             </div>
         </div>
-        <div style='margin-bottom: 20px;'>
-            <div style='display: flex; align-items: center;'>
-                <div style='font-size: 1.1em; background-color: #dbeafe; color: #1e40af; border-radius: 50%; width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; font-weight: bold;'>2</div>
-                <div style='margin-left: 10px;'><strong>AI Analysis</strong><br><span style='font-size: 0.9em;'>We identify the warning lights for you</span></div>
+        <div style='margin-bottom: 30px;'>
+            <div style='display: flex; align-items: flex-start;'>
+                <div style='font-size: 1.1em; background-color: #dbeafe; color: #1e40af; border-radius: 50%; width: 36px; height: 36px; display: flex; justify-content: center; align-items: center; font-weight: bold;'>2</div>
+                <div style='margin-left: 15px;'>
+                    <div style='font-weight: 600; font-size: 1.2em;'>AI Analysis</div>
+                    <div style='font-size: 1.05em; color: #ccc;'>We identify the warning lights for you</div>
+                </div>
             </div>
         </div>
         <div>
-            <div style='display: flex; align-items: center;'>
-                <div style='font-size: 1.1em; background-color: #dbeafe; color: #1e40af; border-radius: 50%; width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; font-weight: bold;'>3</div>
-                <div style='margin-left: 10px;'><strong>Get Maintenance Recommendations</strong><br><span style='font-size: 0.9em;'>Receive detailed advice to fix the issue</span></div>
+            <div style='display: flex; align-items: flex-start;'>
+                <div style='font-size: 1.1em; background-color: #dbeafe; color: #1e40af; border-radius: 50%; width: 36px; height: 36px; display: flex; justify-content: center; align-items: center; font-weight: bold;'>3</div>
+                <div style='margin-left: 15px;'>
+                    <div style='font-weight: 600; font-size: 1.2em;'>Get Maintenance Recommendations</div>
+                    <div style='font-size: 1.05em; color: #ccc;'>Receive detailed advice to fix the issue</div>
+                </div>
             </div>
         </div>
     </div>
@@ -89,6 +98,7 @@ if uploaded_file:
                 {rec}
             </div>
             """, unsafe_allow_html=True)
+            
 
 # --- Placeholder for History Section ---
 st.markdown("""
@@ -97,3 +107,6 @@ st.markdown("""
     <p style='color: gray;'>This section will show a list of past dashboard analyses (coming soon).</p>
 </div>
 """, unsafe_allow_html=True)
+
+
+
