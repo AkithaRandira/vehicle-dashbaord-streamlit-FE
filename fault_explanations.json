@@ -1,0 +1,263 @@
+{
+    "ABS": {
+        "title": "ABS Warning Light",
+        "description": "Indicates a malfunction in the Anti-lock Braking System. Safe braking could be affected.",
+        "severity": "Medium",
+        "recommendation": [
+            "Drive cautiously and avoid hard braking.",
+            "Visit a mechanic to inspect the ABS sensors and brake system."
+        ]
+    },
+    "Air Suspension": {
+        "title": "Air Suspension Warning",
+        "description": "Problem with the air suspension system. Ride quality may be impacted.",
+        "severity": "Medium",
+        "recommendation": [
+            "Avoid rough roads to prevent further damage.",
+            "Have the air suspension system checked for leaks or pump issues."
+        ]
+    },
+    "Airbag Indicator Light": {
+        "title": "Airbag Indicator",
+        "description": "There may be a fault in the airbag system. The airbag may not deploy properly.",
+        "severity": "High",
+        "recommendation": [
+            "Schedule an inspection at a certified repair center.",
+            "Avoid driving until the airbag system is verified."
+        ]
+    },
+    "Automatic Gearbox Warning": {
+        "title": "Automatic Gearbox Warning",
+        "description": "Issue detected in the automatic transmission system. May require inspection.",
+        "severity": "High",
+        "recommendation": [
+            "Avoid high speeds and heavy loads.",
+            "Have the transmission fluid and system diagnosed by a technician."
+        ]
+    },
+    "Automatic Shift Lock or Engine Start Indicator Light": {
+        "title": "Shift Lock/Start Indicator",
+        "description": "Indicates the brake must be pressed to shift from park or to start the engine.",
+        "severity": "Info",
+        "recommendation": [
+            "Ensure your foot is firmly on the brake before shifting.",
+            "Check for faults if this indicator stays on."
+        ]
+    },
+    "Battery Alert Light": {
+        "title": "Battery Alert Light",
+        "description": "Battery is not charging properly. Check alternator or battery terminals.",
+        "severity": "Medium",
+        "recommendation": [
+            "Inspect and clean the battery terminals.",
+            "Have the alternator and charging system tested."
+        ]
+    },
+    "Brake Warning Light": {
+        "title": "Brake Warning Light",
+        "description": "Problem with the braking system. Check brake fluid or brake pads immediately.",
+        "severity": "Critical",
+        "recommendation": [
+            "Stop the vehicle and check brake fluid level.",
+            "Do not drive until brakes are inspected by a mechanic."
+        ]
+    },
+    "Check Engine Light": {
+        "title": "Check Engine Light",
+        "description": "Indicates engine or emission issues. Needs diagnostic scan.",
+        "severity": "High",
+        "recommendation": [
+            "Use an OBD-II scanner or visit a service center for diagnostics.",
+            "Avoid high-speed driving until resolved."
+        ]
+    },
+    "Coolant Temperature Warning Light": {
+        "title": "Coolant Temperature Warning",
+        "description": "Engine temperature is too high. Stop the vehicle and allow it to cool down.",
+        "severity": "High",
+        "recommendation": [
+            "Turn off the engine immediately to prevent damage.",
+            "Check coolant level and radiator cap."
+        ]
+    },
+    "DPF light": {
+        "title": "Diesel Particulate Filter (DPF) Light",
+        "description": "DPF may be clogged. Consider regeneration or service.",
+        "severity": "Medium",
+        "recommendation": [
+            "Drive at higher RPMs for passive regeneration.",
+            "Visit a service center for DPF cleaning or replacement."
+        ]
+    },
+    "Eco Driving Indicator": {
+        "title": "Eco Driving Indicator",
+        "description": "Indicates optimal driving efficiency. No action needed.",
+        "severity": "Info",
+        "recommendation": [
+            "Maintain current driving behavior.",
+            "Monitor fuel economy for consistency."
+        ]
+    },
+    "Engine Temperature Warning Light": {
+        "title": "Engine Overheating",
+        "description": "Engine is overheating. Stop vehicle and check coolant level.",
+        "severity": "Critical",
+        "recommendation": [
+            "Turn off the engine and let it cool.",
+            "Check coolant level and radiator system."
+        ]
+    },
+    "Fog Lamp Indicator Light": {
+        "title": "Fog Lamp Indicator",
+        "description": "Indicates fog lights are turned on.",
+        "severity": "Info",
+        "recommendation": [
+            "Use only in foggy or low-visibility conditions.",
+            "Turn off when not needed to avoid dazzling others."
+        ]
+    },
+    "Glow Plug Indicator": {
+        "title": "Glow Plug Warning",
+        "description": "Glow plugs may be faulty. Common in diesel vehicles.",
+        "severity": "Medium",
+        "recommendation": [
+            "Wait for the glow plug light to turn off before starting.",
+            "Inspect glow plugs if starting issues occur."
+        ]
+    },
+    "Lamp Out": {
+        "title": "Exterior Lamp Out",
+        "description": "One or more exterior lights are not functioning.",
+        "severity": "Low",
+        "recommendation": [
+            "Check and replace faulty bulbs.",
+            "Inspect wiring or fuse if issue persists."
+        ]
+    },
+    "Lane Departure Warning Light": {
+        "title": "Lane Departure Warning",
+        "description": "Vehicle is unintentionally drifting out of its lane.",
+        "severity": "Medium",
+        "recommendation": [
+            "Hold the steering wheel firmly.",
+            "Stay attentive and avoid distractions."
+        ]
+    },
+    "Low Fuel Indicator Light": {
+        "title": "Low Fuel Warning",
+        "description": "Fuel level is low. Refuel soon.",
+        "severity": "Medium",
+        "recommendation": [
+            "Refuel at the nearest station.",
+            "Avoid running the tank dry."
+        ]
+    },
+    "OD": {
+        "title": "Overdrive Indicator",
+        "description": "Indicates overdrive is engaged or disengaged. Usually informational.",
+        "severity": "Info",
+        "recommendation": [
+            "Use overdrive for highway driving.",
+            "Turn off in hilly terrain or towing mode."
+        ]
+    },
+    "Oil": {
+        "title": "Oil Pressure Warning",
+        "description": "Low oil pressure detected. Stop vehicle and check oil level.",
+        "severity": "Critical",
+        "recommendation": [
+            "Stop engine immediately to prevent damage.",
+            "Check oil level and top up if necessary."
+        ]
+    },
+    "Power Steering Warning Light": {
+        "title": "Power Steering Warning",
+        "description": "Problem with electric or hydraulic power steering system.",
+        "severity": "Medium",
+        "recommendation": [
+            "Avoid sharp turns until checked.",
+            "Have power steering fluid and system inspected."
+        ]
+    },
+    "Seat Belt Reminder Light": {
+        "title": "Seat Belt Reminder",
+        "description": "One or more passengers have not fastened seat belts.",
+        "severity": "Info",
+        "recommendation": [
+            "Ensure all passengers fasten their seat belts.",
+            "Do not drive until everyone is safely buckled."
+        ]
+    },
+    "Security Indicator Light": {
+        "title": "Security Indicator",
+        "description": "Indicates the vehicle's anti-theft system is active or has an issue.",
+        "severity": "Medium",
+        "recommendation": [
+            "Ensure the key or fob is functioning properly.",
+            "Have the security system inspected if the light stays on."
+        ]
+    },
+    "Steering Wheel Lock": {
+        "title": "Steering Lock Warning",
+        "description": "Steering wheel is locked. Try restarting the vehicle or checking ignition.",
+        "severity": "High",
+        "recommendation": [
+            "Gently turn the wheel while turning the ignition key.",
+            "Contact a mechanic if the lock does not release."
+        ]
+    },
+    "Tire": {
+        "title": "Tire Pressure Warning",
+        "description": "Tire pressure is low or system malfunction detected.",
+        "severity": "Medium",
+        "recommendation": [
+            "Check and adjust tire pressure to the recommended level.",
+            "Inspect for punctures or leaks and repair as necessary."
+        ]
+    },
+    "Traction Control Light": {
+        "title": "Traction Control Active",
+        "description": "Indicates the traction control system is active.",
+        "severity": "Info",
+        "recommendation": [
+            "Drive carefully, especially on slippery surfaces.",
+            "Let the system engage automatically as needed."
+        ]
+    },
+    "Traction Control Malfunction Light": {
+        "title": "Traction Control Malfunction",
+        "description": "Indicates a problem with the traction control system.",
+        "severity": "Medium",
+        "recommendation": [
+            "Avoid aggressive driving until resolved.",
+            "Have the traction control system inspected."
+        ]
+    },
+    "Trailer Tow Hitch Warning": {
+        "title": "Tow Hitch Warning",
+        "description": "Trailer tow hitch not secured or detected malfunction.",
+        "severity": "Medium",
+        "recommendation": [
+            "Ensure the trailer is properly connected.",
+            "Inspect hitch sensor or wiring if warning persists."
+        ]
+    },
+    "Transmission Temperature Warning Light": {
+        "title": "Transmission Overheat",
+        "description": "Transmission temperature is too high. Stop vehicle and cool system.",
+        "severity": "High",
+        "recommendation": [
+            "Stop and allow transmission to cool before proceeding.",
+            "Have transmission fluid level and condition checked."
+        ]
+    },
+    "Washer Fluid Indicator Light": {
+        "title": "Washer Fluid Low",
+        "description": "Windshield washer fluid is low. Refill needed.",
+        "severity": "Low",
+        "recommendation": [
+            "Refill washer fluid reservoir with appropriate fluid.",
+            "Check for leaks if the warning persists after refill."
+        ]
+    }
+}
