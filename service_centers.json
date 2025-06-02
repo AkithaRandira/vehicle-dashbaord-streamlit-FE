@@ -1,0 +1,386 @@
+[
+  {
+    "name": "QuickFix Service Center 1",
+    "address": "89 Main Street, Trincomalee",
+    "city": "Jaffna",
+    "specialties": [
+      "Engine Light",
+      "Check Engine"
+    ],
+    "contact": "+94 733877399",
+    "latitude": 8.5874,
+    "longitude": 81.2152
+  },
+  {
+    "name": "DriveSure Service Center 2",
+    "address": "84 Main Street, Anuradhapura",
+    "city": "Negombo",
+    "specialties": [
+      "Battery Warning",
+      "Airbag Warning"
+    ],
+    "contact": "+94 757349712",
+    "latitude": 7.2906,
+    "longitude": 80.6337
+  },
+  {
+    "name": "MaxAuto Service Center 3",
+    "address": "92 Main Street, Badulla",
+    "city": "Colombo",
+    "specialties": [
+      "Check Engine",
+      "Airbag Warning",
+      "Engine Light",
+      "ABS"
+    ],
+    "contact": "+94 702651375",
+    "latitude": 6.9271,
+    "longitude": 79.8612
+  },
+  {
+    "name": "MaxAuto Service Center 4",
+    "address": "71 Main Street, Batticaloa",
+    "city": "Badulla",
+    "specialties": [
+      "Engine Light",
+      "Check Engine"
+    ],
+    "contact": "+94 794079410",
+    "latitude": 7.7153,
+    "longitude": 81.6938
+  },
+  {
+    "name": "QuickFix Service Center 5",
+    "address": "11 Main Street, Badulla",
+    "city": "Negombo",
+    "specialties": [
+      "ABS",
+      "Coolant Temperature",
+      "Battery Warning",
+      "Transmission Warning"
+    ],
+    "contact": "+94 751830390",
+    "latitude": 7.8742,
+    "longitude": 80.6511
+  },
+  {
+    "name": "QuickFix Service Center 6",
+    "address": "43 Main Street, Batticaloa",
+    "city": "Colombo",
+    "specialties": [
+      "Oil Pressure",
+      "Engine Light",
+      "ABS",
+      "Check Engine"
+    ],
+    "contact": "+94 721577492",
+    "latitude": 6.0535,
+    "longitude": 80.221
+  },
+  {
+    "name": "AutoCare Service Center 7",
+    "address": "51 Main Street, Badulla",
+    "city": "Anuradhapura",
+    "specialties": [
+      "Coolant Temperature",
+      "ABS"
+    ],
+    "contact": "+94 767214361",
+    "latitude": 6.9271,
+    "longitude": 79.8612
+  },
+  {
+    "name": "DriveSure Service Center 8",
+    "address": "57 Main Street, Trincomalee",
+    "city": "Galle",
+    "specialties": [
+      "ABS",
+      "Check Engine",
+      "Brake Light"
+    ],
+    "contact": "+94 752439700",
+    "latitude": 8.5874,
+    "longitude": 81.2152
+  },
+  {
+    "name": "SmartWheels Service Center 9",
+    "address": "73 Main Street, Colombo",
+    "city": "Jaffna",
+    "specialties": [
+      "Transmission Warning",
+      "Check Engine",
+      "Engine Light"
+    ],
+    "contact": "+94 769349266",
+    "latitude": 9.6615,
+    "longitude": 80.0255
+  },
+  {
+    "name": "AutoCare Service Center 10",
+    "address": "85 Main Street, Colombo",
+    "city": "Matara",
+    "specialties": [
+      "Transmission Warning",
+      "Brake Light",
+      "ABS",
+      "Check Engine"
+    ],
+    "contact": "+94 797962946",
+    "latitude": 5.9485,
+    "longitude": 80.5353
+  },
+  {
+    "name": "AutoCare Service Center 11",
+    "address": "23 Main Street, Colombo",
+    "city": "Ratnapura",
+    "specialties": [
+      "Battery Warning",
+      "Oil Pressure"
+    ],
+    "contact": "+94 782219140",
+    "latitude": 6.6828,
+    "longitude": 80.3994
+  },
+  {
+    "name": "QuickFix Service Center 12",
+    "address": "79 Main Street, Batticaloa",
+    "city": "Anuradhapura",
+    "specialties": [
+      "Check Engine",
+      "Transmission Warning",
+      "Battery Warning"
+    ],
+    "contact": "+94 751053935",
+    "latitude": 7.7153,
+    "longitude": 81.6938
+  },
+  {
+    "name": "SmartWheels Service Center 13",
+    "address": "89 Main Street, Badulla",
+    "city": "Galle",
+    "specialties": [
+      "Coolant Temperature",
+      "Check Engine",
+      "Engine Light",
+      "Brake Light"
+    ],
+    "contact": "+94 742829708",
+    "latitude": 6.0535,
+    "longitude": 80.221
+  },
+  {
+    "name": "QuickFix Service Center 14",
+    "address": "42 Main Street, Galle",
+    "city": "Negombo",
+    "specialties": [
+      "Battery Warning",
+      "Coolant Temperature"
+    ],
+    "contact": "+94 715746079",
+    "latitude": 7.2906,
+    "longitude": 80.6337
+  },
+  {
+    "name": "MaxAuto Service Center 15",
+    "address": "16 Main Street, Trincomalee",
+    "city": "Batticaloa",
+    "specialties": [
+      "Airbag Warning",
+      "Transmission Warning"
+    ],
+    "contact": "+94 705456520",
+    "latitude": 8.5874,
+    "longitude": 81.2152
+  },
+  {
+    "name": "MaxAuto Service Center 16",
+    "address": "86 Main Street, Kandy",
+    "city": "Trincomalee",
+    "specialties": [
+      "Transmission Warning",
+      "Airbag Warning",
+      "Brake Light"
+    ],
+    "contact": "+94 749126195",
+    "latitude": 7.2906,
+    "longitude": 80.6337
+  },
+  {
+    "name": "DriveSure Service Center 17",
+    "address": "83 Main Street, Colombo",
+    "city": "Matara",
+    "specialties": [
+      "Oil Pressure",
+      "ABS",
+      "Airbag Warning"
+    ],
+    "contact": "+94 739142606",
+    "latitude": 5.9485,
+    "longitude": 80.5353
+  },
+  {
+    "name": "DriveSure Service Center 18",
+    "address": "63 Main Street, Galle",
+    "city": "Trincomalee",
+    "specialties": [
+      "Transmission Warning",
+      "Airbag Warning"
+    ],
+    "contact": "+94 797846028",
+    "latitude": 8.5874,
+    "longitude": 81.2152
+  },
+  {
+    "name": "SmartWheels Service Center 19",
+    "address": "63 Main Street, Kurunegala",
+    "city": "Badulla",
+    "specialties": [
+      "Transmission Warning",
+      "Engine Light"
+    ],
+    "contact": "+94 748012190",
+    "latitude": 6.9934,
+    "longitude": 80.3998
+  },
+  {
+    "name": "MaxAuto Service Center 20",
+    "address": "26 Main Street, Anuradhapura",
+    "city": "Negombo",
+    "specialties": [
+      "Airbag Warning",
+      "Coolant Temperature",
+      "Brake Light",
+      "Transmission Warning"
+    ],
+    "contact": "+94 769317837",
+    "latitude": 8.3114,
+    "longitude": 80.4037
+  },
+  {
+    "name": "AutoCare Service Center 21",
+    "address": "27 Main Street, Kandy",
+    "city": "Kurunegala",
+    "specialties": [
+      "Check Engine",
+      "Coolant Temperature"
+    ],
+    "contact": "+94 761242573",
+    "latitude": 7.4833,
+    "longitude": 80.3666
+  },
+  {
+    "name": "AutoCare Service Center 22",
+    "address": "73 Main Street, Batticaloa",
+    "city": "Kandy",
+    "specialties": [
+      "Brake Light",
+      "Check Engine",
+      "ABS"
+    ],
+    "contact": "+94 734285077",
+    "latitude": 7.2906,
+    "longitude": 80.6337
+  },
+  {
+    "name": "MaxAuto Service Center 23",
+    "address": "12 Main Street, Anuradhapura",
+    "city": "Anuradhapura",
+    "specialties": [
+      "Oil Pressure",
+      "ABS",
+      "Battery Warning",
+      "Check Engine"
+    ],
+    "contact": "+94 747118850",
+    "latitude": 8.3114,
+    "longitude": 80.4037
+  },
+  {
+    "name": "AutoCare Service Center 24",
+    "address": "34 Main Street, Trincomalee",
+    "city": "Badulla",
+    "specialties": [
+      "Check Engine",
+      "Brake Light"
+    ],
+    "contact": "+94 723102348",
+    "latitude": 8.5874,
+    "longitude": 81.2152
+  },
+  {
+    "name": "SmartWheels Service Center 25",
+    "address": "81 Main Street, Kurunegala",
+    "city": "Negombo",
+    "specialties": [
+      "ABS",
+      "Engine Light",
+      "Airbag Warning",
+      "Brake Light"
+    ],
+    "contact": "+94 796671392",
+    "latitude": 7.4833,
+    "longitude": 80.3666
+  },
+  {
+    "name": "DriveSure Service Center 26",
+    "address": "19 Main Street, Galle",
+    "city": "Trincomalee",
+    "specialties": [
+      "ABS",
+      "Battery Warning"
+    ],
+    "contact": "+94 779207621",
+    "latitude": 8.5874,
+    "longitude": 81.2152
+  },
+  {
+    "name": "QuickFix Service Center 27",
+    "address": "10 Main Street, Jaffna",
+    "city": "Matara",
+    "specialties": [
+      "Battery Warning",
+      "Oil Pressure"
+    ],
+    "contact": "+94 796774558",
+    "latitude": 9.6615,
+    "longitude": 80.0255
+  },
+  {
+    "name": "MaxAuto Service Center 28",
+    "address": "61 Main Street, Ratnapura",
+    "city": "Galle",
+    "specialties": [
+      "Engine Light",
+      "Oil Pressure",
+      "Brake Light",
+      "Airbag Warning"
+    ],
+    "contact": "+94 728983053",
+    "latitude": 6.9934,
+    "longitude": 80.3998
+  },
+  {
+    "name": "SmartWheels Service Center 29",
+    "address": "72 Main Street, Batticaloa",
+    "city": "Kurunegala",
+    "specialties": [
+      "Airbag Warning",
+      "Coolant Temperature"
+    ],
+    "contact": "+94 708447276",
+    "latitude": 7.4833,
+    "longitude": 80.3666
+  },
+  {
+    "name": "MaxAuto Service Center 30",
+    "address": "37 Main Street, Batticaloa",
+    "city": "Batticaloa",
+    "specialties": [
+      "ABS",
+      "Check Engine"
+    ],
+    "contact": "+94 716376457",
+    "latitude": 7.7153,
+    "longitude": 81.6938
+  }
+]
