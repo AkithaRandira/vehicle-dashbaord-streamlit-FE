@@ -21,6 +21,7 @@ st.markdown("""
     /* Import modern fonts */
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
             
+            
     
     /* Global styles */
     .stApp {
@@ -148,9 +149,10 @@ html {
     }
     
     .btn-primary:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
-    }
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4), 0 0 20px #667eea66;
+}
+
     
     .btn-secondary {
         background: white;
@@ -169,19 +171,64 @@ html {
         color: white;
         transform: translateY(-2px);
     }
+
+    .btn-primary, .btn-secondary {
+    transition: all 0.25s ease;
+    transform: translateY(0px);
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+     
     
     /* Hero Section */
     .hero-section {
-        text-align: center;
-        padding: 80px 0 60px 0;
-        background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
-        margin: 0 -1rem;
-        border-radius: 0 0 40px 40px;
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 60px 20px 70px 20px;  /* top, right, bottom, left */
+    background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+    margin: 0 -1rem;
+    border-radius: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+    .hero-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 30% 30%, #667eea40, transparent 50%),
+                radial-gradient(circle at 70% 60%, #764ba240, transparent 50%),
+                radial-gradient(circle at 50% 90%, #8b5cf640, transparent 60%);
+    animation: auroraMove 25s linear infinite;
+    z-index: 0;
+    opacity: 0.8;
+}
+
+@keyframes gridScroll {
+    0% {
+        background-position: 0 0, 0 0;
     }
+    100% {
+        background-position: 100px 100px, 100px 100px;
+    }
+}
+
+
+.hero-section > * {
+    position: relative;
+    z-index: 1;
+}
+
+
     
     .hero-title {
-        font-size: 3.5rem;
+        font-size: 7.5rem;
         font-weight: 700;
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         -webkit-background-clip: text;
@@ -191,15 +238,46 @@ html {
         line-height: 1.2;
     }
     
-    .hero-subtitle {
-        font-size: 1.25rem;
-        color: #6b7280;
-        margin-bottom: 40px;
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-        line-height: 1.6;
+    .hero-title {
+    font-size: 7.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 24px;
+    line-height: 1.2;
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
     }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    
+    .hero-subtitle {
+    font-size: 1.25rem;
+    color: #6b7280;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    text-align: center;
+}
+
+            .btn-secondary:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
     
     .hero-buttons {
         display: flex;
@@ -425,6 +503,19 @@ html {
         margin: 30px 0;
         border: 1px solid rgba(226, 232, 240, 0.8);
     }
+            
+    .btn-primary:hover .arrow {
+    transform: translateX(4px);
+}
+
+.btn-primary {
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 35px rgba(102, 126, 234, 0.5);
+}
     
     /* Responsive design */
     @media (max-width: 768px) {
@@ -513,24 +604,33 @@ st.markdown("""
 # --- Enhanced Hero Section ---
 st.markdown("""
 <div class='hero-section'>
-    <h1 class='hero-title'>Predict Vehicle Maintenance<br>Before Issues Arise</h1>
-    <p class='hero-subtitle'>
-        Upload your dashboard image and get instant AI-powered maintenance predictions 
-        with personalized recommendations from our advanced computer vision system
-    </p>
+    <h1 class='hero-title'>
+        Drive With Confidence.<br>Maintain Before It Breaks.
+    </h1>
     <div class='hero-buttons'>
         <button class='btn-primary' onclick="document.getElementById('upload-section').scrollIntoView({behavior: 'smooth'})">
-            🚀 Get Started Now
-        </button>
+    <span style="margin-right: 8px;">🚀</span>
+    Get Started Now
+    <span style="margin-left: 8px; transition: transform 0.3s ease;" class="arrow">→</span>
+</button>
         <a href="/History" target="_self">
             <button class='btn-secondary'>📈 View Analysis History</button>
         </a>
+        <a href="#how-it-works">
+            <button class='btn-secondary'>📘 Learn How It Works</button>
+        </a>
     </div>
+    <div style="margin-top: 30px; display: inline-flex; align-items: center; background: linear-gradient(135deg, #e0fce0, #d1fae5); color: #065f46; padding: 12px 20px; border-radius: 16px; font-weight: 600; font-size: 0.95rem; box-shadow: 0 4px 15px rgba(16, 185, 129, 0.2); border: 1px solid rgba(16, 185, 129, 0.3);">
+    <span style="margin-right: 8px;">✅</span> Trusted by 500+ vehicle owners across Sri Lanka
+</div>
+
 </div>
 """, unsafe_allow_html=True)
 
+
 # --- How It Works Section ---
-st.markdown("<div class='how-it-works'>", unsafe_allow_html=True)
+st.markdown("<div class='how-it-works' id='how-it-works'>", unsafe_allow_html=True)
+
 
 col1, col2 = st.columns([1.2, 1])
 
