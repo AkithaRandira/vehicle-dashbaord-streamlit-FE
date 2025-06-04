@@ -546,6 +546,49 @@ html {
             padding: 25px;
         }
     }
+            
+            .footer-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    text-align: center;
+    padding: 16px 0;
+    font-size: 0.95rem;
+    color: #6b7280;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(229, 231, 235, 0.5);
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+            .footer-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 12px 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #4b5563;
+    border-top: 1px solid rgba(226, 232, 240, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 999;
+}
+
+.footer-logo {
+    height: 20px;
+    width: 20px;
+    margin-bottom: 2px;
+}
+
+
 </style>
 """, unsafe_allow_html=True)
 
@@ -831,9 +874,9 @@ if img_bytes:
 
 # --- Footer ---
 st.markdown("""
-<div style='margin-top: 80px; padding: 40px 0; text-align: center; background: #f8fafc; border-top: 1px solid #e5e7eb;'>
-    <p style='color: #6b7280; margin: 0;'>
-        Made with ❤️ using AutoVision AI • © 2024 Vehicle Maintenance Predictor
-    </p>
+<div class="footer-bar">
+  <img src="https://img.icons8.com/fluency/32/car--v1.png" alt="AutoVision Logo" class="footer-logo"/>
+  <span>AutoVision AI © 2025 – Vehicle Maintenance Predictor | All rights reserved</span>
 </div>
 """, unsafe_allow_html=True)
+
