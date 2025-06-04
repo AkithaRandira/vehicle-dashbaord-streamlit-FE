@@ -20,6 +20,7 @@ st.markdown("""
 <style>
     /* Import modern fonts */
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+            
     
     /* Global styles */
     .stApp {
@@ -27,32 +28,48 @@ st.markdown("""
         background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
     }
     
+    body {
+    margin-top: 0 !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+    
     .main .block-container {
-        padding-top: 0;
-        padding-bottom: 2rem;
-        background: transparent;
-    }
+    padding-top: 110px !important;
+    padding-bottom: 2rem;
+    background: transparent;
+}
+
+
     
     /* Hide Streamlit elements */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
+            
+    
     
     /* Modern Navigation Bar */
     .navbar {
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 48px;
-        background: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(20px);
-        border-bottom: 1px solid rgba(229, 231, 235, 0.3);
-        box-shadow: 0 1px 20px rgba(0, 0, 0, 0.05);
-        margin-bottom: 0;
-    }
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 48px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(229, 231, 235, 0.3);
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 0;
+}
+
     
     .nav-brand {
         display: flex;
