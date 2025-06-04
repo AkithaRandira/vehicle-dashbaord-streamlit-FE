@@ -293,12 +293,16 @@ html {
     }
     
     .section-title {
-        font-size: 2.5rem;
-        font-weight: 700;
-        text-align: center;
-        margin-bottom: 60px;
-        color: #1f2937;
-    }
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
     
     .steps-container {
         display: flex;
@@ -360,12 +364,28 @@ html {
     }
     
     .upload-title {
-        font-size: 1.8rem;
-        font-weight: 600;
-        color: #1f2937;
-        margin-bottom: 30px;
-        text-align: center;
-    }
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 30px;
+    text-align: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+            .upload-section {
+    background: white;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.07);
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
     
     /* Analysis Results */
     .analysis-card {
@@ -516,6 +536,8 @@ html {
     transform: translateY(-2px);
     box-shadow: 0 12px 35px rgba(102, 126, 234, 0.5);
 }
+            
+            
     
     /* Responsive design */
     @media (max-width: 768px) {
@@ -546,6 +568,27 @@ html {
             padding: 25px;
         }
     }
+            
+            .how-it-works-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.steps-side, .upload-side {
+    flex: 1;
+    max-width: 600px;
+}
+
+@media (max-width: 768px) {
+    .how-it-works-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
             
             .footer-fixed {
     position: fixed;
@@ -672,45 +715,52 @@ st.markdown("""
 
 
 # --- How It Works Section ---
-st.markdown("<div class='how-it-works' id='how-it-works'>", unsafe_allow_html=True)
+st.markdown("""
+<div class='how-it-works' id='how-it-works'>
+  <div class='how-it-works-container'>
+""", unsafe_allow_html=True)
 
-
-col1, col2 = st.columns([1.2, 1])
+col1, col2 = st.columns([1, 1.5])
 
 with col1:
     st.markdown("""
-    <h2 class='section-title'>How It Works</h2>
-    <div class='steps-container'>
-        <div class='step'>
-            <div class='step-number'>1</div>
-            <div class='step-content'>
-                <h4>📱 Upload Dashboard Image</h4>
-                <p>Take a clear photo of your vehicle's dashboard showing any warning lights or indicators that concern you.</p>
-            </div>
-        </div>
-        <div class='step'>
-            <div class='step-number'>2</div>
-            <div class='step-content'>
-                <h4>🤖 AI-Powered Analysis</h4>
-                <p>Our advanced computer vision system analyzes your image to identify warning lights and potential issues.</p>
-            </div>
-        </div>
-        <div class='step'>
-            <div class='step-number'>3</div>
-            <div class='step-content'>
-                <h4>🔧 Get Expert Recommendations</h4>
-                <p>Receive detailed maintenance advice and find nearby service centers specialized in your vehicle's needs.</p>
-            </div>
-        </div>
+    <div class='steps-side'>
+      <h2 class='section-title'>How It Works</h2>
+      <div class='steps-container'>
+          <div class='step'>
+              <div class='step-number'>1</div>
+              <div class='step-content'>
+                  <h4>📱 Upload Dashboard Image</h4>
+                  <p>Take a clear photo of your vehicle's dashboard showing any warning lights or indicators that concern you.</p>
+              </div>
+          </div>
+          <div class='step'>
+              <div class='step-number'>2</div>
+              <div class='step-content'>
+                  <h4>🤖 AI-Powered Analysis</h4>
+                  <p>Our advanced computer vision system analyzes your image to identify warning lights and potential issues.</p>
+              </div>
+          </div>
+          <div class='step'>
+              <div class='step-number'>3</div>
+              <div class='step-content'>
+                  <h4>🔧 Get Expert Recommendations</h4>
+                  <p>Receive detailed maintenance advice and find nearby service centers specialized in your vehicle's needs.</p>
+              </div>
+          </div>
+      </div>
     </div>
     """, unsafe_allow_html=True)
 
+
+# --- Upload Section ---
 with col2:
     st.markdown("""
-    <div class='upload-section' id='upload-section'>
-        <h3 class='upload-title'>🎯 Upload Dashboard Image</h3>
+    <div class='upload-side'>
+      <h2 class='section-title'>🎯 Upload Dashboard Image</h2>
+      <div class='upload-section' id='upload-section'>
     """, unsafe_allow_html=True)
-    
+
     upload_method = st.radio(
         "Select input method", 
         ["📤 Upload Image", "📸 Open Camera"], 
@@ -731,10 +781,14 @@ with col2:
         camera_image = st.camera_input("Take a picture of your dashboard")
         if camera_image:
             img_bytes = camera_image.getvalue()
-    
-    st.markdown("</div>", unsafe_allow_html=True)
 
-st.markdown("</div>", unsafe_allow_html=True)
+    st.markdown("</div></div>", unsafe_allow_html=True)
+
+st.markdown("""
+  </div> <!-- end of how-it-works-container -->
+</div> <!-- end of how-it-works -->
+""", unsafe_allow_html=True)
+# --- Upload Section ---
 
 # --- Analysis Results ---
 if img_bytes:
