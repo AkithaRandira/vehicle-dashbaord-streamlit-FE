@@ -278,11 +278,12 @@ body, .stApp {
         </div>
     </div>
     <div class='nav-links'>
-        <a href="/" target="_self">🏠 Home</a>
-        <a href="/History" target="_self">📊 History</a>
-        <a href="/ServiceCenters" class="active">📍 Service Centers</a>
-        <a href="#profile">👤 Profile</a>
-    </div>
+    <a href="/" target="_self">🏠 Home</a>
+    <a href="/History" target="_self">📊 History</a>
+    <a href="/ServiceCenters" target="_self">📍 Service Centers</a>
+    <a href="/Profile" target="_self">👤 Profile</a>
+</div>
+
 </div>
 <br><br>
 

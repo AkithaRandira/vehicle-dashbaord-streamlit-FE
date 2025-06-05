@@ -1000,8 +1000,8 @@ st.markdown("""
     <div class='nav-links'>
         <a href="/" class="active">🏠 Home</a>
         <a href="/History" target="_self">📊 History</a>
-        <a href="/ServiceCenters">📍 Service Centers</a>
-        <a href="#profile">👤 Profile</a>
+        <a href="/ServiceCenters" target="_self">📍 Service Centers</a>
+        <a href="/Profile" target="_self">👤 Profile</a>
     </div>
     <div class='nav-actions'>
         <span style='color: #6b7280; font-weight: 500;'>Welcome back!</span>

@@ -210,12 +210,13 @@ button[kind="primary"], button[kind="secondary"] {
             <span class='beta-badge'>BETA</span>
         </div>
     </div>
-    <div class='nav-links'>
-        <a href="/" target="_self">🏠 Home</a>
-        <a href="/History" class="active">📊 History</a>
-        <a href="/ServiceCenters">📍 Service Centers</a>
-        <a href="#profile">👤 Profile</a>
-    </div>
+   <div class='nav-links'>
+    <a href="/" target="_self">🏠 Home</a>
+    <a href="/History" target="_self">📊 History</a>
+    <a href="/ServiceCenters" target="_self">📍 Service Centers</a>
+    <a href="/Profile" target="_self">👤 Profile</a>
+</div>
+
 </div>
 <br><br><br>
 """, unsafe_allow_html=True)
