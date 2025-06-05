@@ -213,7 +213,7 @@ button[kind="primary"], button[kind="secondary"] {
     <div class='nav-links'>
         <a href="/" target="_self">🏠 Home</a>
         <a href="/History" class="active">📊 History</a>
-        <a href="#service">📍 Service Centers</a>
+        <a href="/ServiceCenters">📍 Service Centers</a>
         <a href="#profile">👤 Profile</a>
     </div>
 </div>

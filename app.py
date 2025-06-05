@@ -1000,7 +1000,7 @@ st.markdown("""
     <div class='nav-links'>
         <a href="/" class="active">🏠 Home</a>
         <a href="/History" target="_self">📊 History</a>
-        <a href="#service">📍 Service Centers</a>
+        <a href="/ServiceCenters">📍 Service Centers</a>
         <a href="#profile">👤 Profile</a>
     </div>
     <div class='nav-actions'>
