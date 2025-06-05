@@ -355,14 +355,223 @@ html {
     }
     
     /* Upload Section */
-    .upload-section {
-        background: white;
-        border-radius: 20px;
-        padding: 40px;
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-        margin-top: 40px;
-    }
+.upload-section {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    border-radius: 24px;
+    padding: 50px 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+    margin-top: 40px;
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    position: relative;
+    overflow: hidden;
+}
+
+.upload-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #667eea, #764ba2, #8b5cf6);
+    border-radius: 24px 24px 0 0;
+}
+
+/* Custom File Uploader */
+.stFileUploader > div {
+    border: 3px dashed #cbd5e1 !important;
+    border-radius: 16px !important;
+    background: linear-gradient(135deg, #f1f5f9 0%, #ffffff 100%) !important;
+    padding: 60px 40px !important;
+    text-align: center !important;
+    transition: all 0.3s ease !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.stFileUploader > div:hover {
+    border-color: #667eea !important;
+    background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.15) !important;
+}
+
+.stFileUploader > div > div {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+}
+
+/* Upload Icon Enhancement */
+.stFileUploader svg {
+    width: 48px !important;
+    height: 48px !important;
+    color: #667eea !important;
+    margin-bottom: 16px !important;
+}
+
+/* Upload Text Styling */
+.stFileUploader > div > div > div {
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    color: #374151 !important;
+    margin-bottom: 8px !important;
+}
+
+.stFileUploader > div > div > small {
+    font-size: 0.95rem !important;
+    color: #6b7280 !important;
+    font-weight: 500 !important;
+}
+
+/* Camera Input Styling */
+.stCameraInput > div {
+    border: 3px dashed #cbd5e1 !important;
+    border-radius: 16px !important;
+    background: linear-gradient(135deg, #f1f5f9 0%, #ffffff 100%) !important;
+    padding: 40px !important;
+    text-align: center !important;
+    transition: all 0.3s ease !important;
+}
+
+.stCameraInput > div:hover {
+    border-color: #667eea !important;
+    background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.15) !important;
+}
+
+/* Radio Button Styling */
+/* Radio Button Styling */
+.stRadio {
+    display: flex !important;
+    justify-content: center !important;
+    margin: 30px 0 !important;
+            color: #374151 !important;
+}
+
+.stRadio > div {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 20px !important;
+    width: 100% !important;
+    flex-wrap: wrap !important;
+}
+
+.stRadio > div > label {
+    background: linear-gradient(135deg, #667eea, #764ba2) !important;
+    border: 2px solid #e5e7eb !important;
+    border-radius: 16px !important;
+    padding: 16px 32px !important;
+    font-weight: 600 !important;
+    color: #374151 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    min-width: 200px !important;
+    text-align: center !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.stRadio > div > label::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: -100% !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.1), transparent) !important;
+    transition: left 0.6s ease !important;
+}
+
+.stRadio > div > label:hover::before {
+    left: 100% !important;
+}
+
+.stRadio > div > label:hover {
+    border-color: #667eea !important;
+    background: rgba(102, 126, 234, 0.05) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.15) !important;
+}
+
+.stRadio > div > label[data-checked="true"] {
+    background: linear-gradient(135deg, #667eea, #764ba2) !important;
+    color: #2563eb !important;
+    border-color: transparent !important;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4) !important;
+    transform: translateY(-2px) !important;
+}
+
+.stRadio > div > label[data-checked="true"]::before {
+    display: none !important;
+}
+
+/* Hide default radio buttons */
+.stRadio input[type="radio"] {
+    display: none !important;
+}
+
+/* Radio button container */
+.stRadio > div {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.stRadio > div > label {
+    background: linear-gradient(135deg, #667eea, #764ba2) !important;
+    border: 2px solid #e5e7eb !important;
+    border-radius: 12px !important;
+    padding: 12px 24px !important;
+    font-weight: 600 !important;
+    color: #374151 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+            
+     /* More general file name text color fix */
+.stFileUploader > div > div > div span {
+    color: #000 !important;
+    font-weight: 600 !important;
+}
+
+
+
+.stRadio > div > label:hover {
+    border-color: #667eea !important;
+    background: rgba(102, 126, 234, 0.05) !important;
+    transform: translateY(-1px) !important;
+}
+
+.stRadio > div > label[data-checked="true"] {
+    background: white !important;
+    color: #2563eb !important;
+    border: 2px solid #2563eb !important;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2) !important;
+    transform: translateY(-2px) !important;
+}
+
     
+            /* Override uploaded file name color */
+.stFileUploader .uploadedFileName, 
+.stFileUploader span[class^="stText"] {
+    color: #000 !important;
+    font-weight: 600 !important;
+    opacity: 1 !important;
+}
+
+
     .upload-title {
     font-size: 1.8rem;
     font-weight: 700;
@@ -373,6 +582,20 @@ html {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    position: relative;
+}
+
+.upload-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border-radius: 2px;
+}
 }
             .upload-section {
     background: white;
@@ -588,6 +811,61 @@ html {
         align-items: center;
     }
 }
+            /* Enhanced Streamlit Overrides */
+.stFileUploader label {
+    font-size: 0px !important;
+    color: transparent !important;
+}
+
+.stFileUploader > div > div > div:first-child {
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    color: #374151 !important;
+}
+
+.stFileUploader button {
+    background: linear-gradient(135deg, #667eea, #764ba2) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 12px 24px !important;
+    font-weight: 600 !important;
+    font-size: 0.95rem !important;
+    transition: all 0.3s ease !important;
+    margin-top: 15px !important;
+}
+
+.stFileUploader button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4) !important;
+}
+
+/* Camera Input Button */
+.stCameraInput button {
+    background: linear-gradient(135deg, #667eea, #764ba2) !important;
+    color: #2563eb !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 12px 24px !important;
+    font-weight: 600 !important;
+    font-size: 0.95rem !important;
+    transition: all 0.3s ease !important;
+    margin-top: 15px !important;
+}
+
+.stCameraInput button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4) !important;
+}
+
+/* Success Message Styling */
+.stSuccess {
+    background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%) !important;
+    border: 1px solid #10b981 !important;
+    border-radius: 12px !important;
+    color: #065f46 !important;
+    font-weight: 600 !important;
+}
 
             
             .footer-fixed {
@@ -605,6 +883,53 @@ html {
     z-index: 1000;
     backdrop-filter: blur(10px);
 }
+            
+/* Fix uploaded file name color */
+[data-testid="stFileUploaderFileName"] {
+    color: #111 !important;
+    font-weight: 600 !important;
+    opacity: 1 !important;
+}
+
+/* Fix uploaded file size (below the filename) */
+[data-testid="stFileUploaderFileName"] ~ small {
+    color: #444 !important;
+    opacity: 1 !important;
+}
+
+/* Force black text in success alert messages */
+[data-testid="stAlertContainer"] p {
+    color: #111 !important;
+    font-weight: 500 !important;
+    opacity: 1 !important;
+}
+
+            /* Make uploaded image caption text black */
+[data-testid="stImageCaption"] p {
+    color: #111 !important;
+    font-weight: 600 !important;
+    opacity: 1 !important;
+}
+
+            /* Make spinner text (e.g., "Analyzing dashboard image...") black */
+div.stSpinner > div > div > div > span {
+    color: #000 !important;
+    font-weight: 600 !important;
+}
+
+            /* Change color of the Maintenance Recommendations title to gradient blue */
+.recommendations-title {
+    color: #667eea !important;
+    font-weight: 700 !important;
+}
+
+            /* Style for Service Centers Title */
+.service-centers-title {
+    color: #667eea !important;
+    font-weight: 700 !important;
+}
+
+            
             .footer-bar {
     position: fixed;
     bottom: 0;
@@ -754,41 +1079,158 @@ with col1:
 
 
 # --- Upload Section ---
+# --- Upload Section ---
 with col2:
     st.markdown("""
-    <div class='upload-side'>
-      <h2 class='section-title'>🎯 Upload Dashboard Image</h2>
-      <div class='upload-section' id='upload-section'>
+    <div style='text-align: center; margin-bottom: 30px;'>
+      <div style='background: linear-gradient(135deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-size: 1.2rem; font-weight: 700; margin-bottom: 10px;'>
+        📸 Choose Your Upload Method
+      </div>
+      <p style='color: #6b7280; font-size: 0.95rem; margin: 0;'>Upload a clear image of your vehicle's dashboard for AI analysis</p>
+    </div>
+    
+    
     """, unsafe_allow_html=True)
 
+    # Add the CSS for custom upload method cards
+    st.markdown("""
+    <style>
+    .upload-method-card {
+        background: white;
+        border: 2px solid #e5e7eb;
+        border-radius: 16px;
+        padding: 24px 20px;
+        min-width: 180px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .upload-method-card:hover {
+        border-color: #667eea;
+        background: rgba(102, 126, 234, 0.05);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(102, 126, 234, 0.15);
+    }
+    
+    .upload-method-card.active {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        border-color: transparent;
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        transform: translateY(-2px);
+    }
+    
+    .method-icon {
+        font-size: 2rem;
+        margin-bottom: 12px;
+    }
+    
+    .method-title {
+        font-weight: 600;
+        font-size: 1rem;
+        margin-bottom: 6px;
+    }
+    
+    .method-desc {
+        font-size: 0.85rem;
+        opacity: 0.8;
+    }
+    
+    .upload-method-card.active .method-desc {
+        opacity: 0.9;
+    }
+    </style>
+    
+    <script>
+    function selectUploadMethod(method) {
+        // Remove active class from all cards
+        document.querySelectorAll('.upload-method-card').forEach(card => {
+            card.classList.remove('active');
+        });
+        
+        // Add active class to selected card
+        if (method === 'upload') {
+            document.getElementById('upload-card').classList.add('active');
+        } else {
+            document.getElementById('camera-card').classList.add('active');
+        }
+    }
+    </script>
+    """, unsafe_allow_html=True)
+
+    # Use the standard radio buttons but hide them with CSS
     upload_method = st.radio(
         "Select input method", 
-        ["📤 Upload Image", "📸 Open Camera"], 
+        ["📤 Upload from Device", "📸 Take Photo Now"], 
         horizontal=True,
-        key="upload_method"
+        key="upload_method",
+        label_visibility="collapsed"
     )
 
     img_bytes = None
-    if upload_method == "📤 Upload Image":
+    if upload_method == "📤 Upload from Device":
+        st.markdown("""
+        <div style='text-align: center; margin: 20px 0;'>
+          <h4 style='color: #374151; font-weight: 600; margin-bottom: 8px;'>📁 Select Image File</h4>
+          <p style='color: #6b7280; font-size: 0.9rem; margin-bottom: 20px;'>Supported formats: JPG, JPEG, PNG • Max size: 200MB</p>
+        </div>
+        """, unsafe_allow_html=True)
+        
         uploaded_file = st.file_uploader(
             "Choose an image file", 
             type=["jpg", "jpeg", "png"],
-            help="Upload a clear image of your vehicle's dashboard"
+            help="📋 Tips: Ensure good lighting, focus on warning lights, avoid reflections",
+            label_visibility="collapsed"
         )
         if uploaded_file:
             img_bytes = uploaded_file.read()
-    elif upload_method == "📸 Open Camera":
-        camera_image = st.camera_input("Take a picture of your dashboard")
+            st.success("✅ Image uploaded successfully! Analysis will begin shortly.")
+            
+    elif upload_method == "📸 Take Photo Now":
+        st.markdown("""
+        <div style='text-align: center; margin: 20px 0;'>
+          <h4 style='color: #374151; font-weight: 600; margin-bottom: 8px;'>📷 Camera Capture</h4>
+          <p style='color: #6b7280; font-size: 0.9rem; margin-bottom: 20px;'>Position your camera to capture the dashboard clearly</p>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        camera_image = st.camera_input("Take a picture of your dashboard", label_visibility="collapsed")
         if camera_image:
             img_bytes = camera_image.getvalue()
+            st.success("📸 Photo captured successfully! Analysis will begin shortly.")
 
     st.markdown("</div></div>", unsafe_allow_html=True)
 
-st.markdown("""
-  </div> <!-- end of how-it-works-container -->
-</div> <!-- end of how-it-works -->
-""", unsafe_allow_html=True)
-# --- Upload Section ---
+    # Upload Guidelines
+    if not img_bytes:
+        st.markdown("""
+        <div style='background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 16px; padding: 25px; margin-top: 30px; border-left: 4px solid #0ea5e9;'>
+          <h4 style='color: #0c4a6e; font-weight: 600; margin-bottom: 15px; display: flex; align-items: center; gap: 8px;'>
+            💡 Pro Tips for Better Results
+          </h4>
+          <div style='display: grid; grid-template-columns: 1fr 1fr; gap: 15px; color: #0c4a6e;'>
+            <div style='display: flex; align-items: center; gap: 8px;'>
+              <span>🔍</span> <span>Clear, focused image</span>
+            </div>
+            <div style='display: flex; align-items: center; gap: 8px;'>
+              <span>💡</span> <span>Good lighting conditions</span>
+            </div>
+            <div style='display: flex; align-items: center; gap: 8px;'>
+              <span>⚠️</span> <span>Warning lights visible</span>
+            </div>
+            <div style='display: flex; align-items: center; gap: 8px;'>
+              <span>🚫</span> <span>Avoid reflections</span>
+            </div>
+          </div>
+        </div>
+        
+        """, unsafe_allow_html=True)
+
+        
 
 # --- Analysis Results ---
 if img_bytes:
